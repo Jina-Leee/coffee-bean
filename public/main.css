@@ -1,0 +1,270 @@
+html {
+  font-family: "Noto Serif", serif;
+}
+
+@font-face {
+  font-family: "MapoGoldenPier";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 을유 버림 */
+/* @font-face {
+  font-family: "Eulyoo1945-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+body,
+h3,
+p {
+  margin: 0;
+}
+
+.s1 {
+  position: relative;
+  height: 100vh;
+}
+
+.s2 {
+  position: relative;
+  height: 100vh;
+}
+
+.s3 {
+  position: relative;
+  height: 100vh;
+}
+
+.row {
+  width: 1000px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.col {
+  width: 200px;
+}
+
+.nav {
+  background: black;
+  height: 50px;
+}
+
+.nav-text {
+  color: white;
+  margin: auto;
+}
+
+#earth {
+  width: 500px;
+  height: 510px;
+  margin-left: 250px;
+  margin-top: 100px;
+}
+
+.title {
+  width: 800px;
+  margin: 20px 100px;
+}
+
+.scroll-text {
+  text-align: center;
+}
+
+.nav-html:hover {
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+/* .story-section {
+  height: 1080px;
+  background-color: violet;
+} */
+
+.story {
+  text-align: center;
+}
+
+.worldmap {
+  width: 1400px;
+  margin: auto;
+  padding-top: 50px;
+  margin-bottom: 300px;
+}
+
+.worldmap-img {
+  margin-top: 100px;
+  width: 1400px;
+}
+
+.coffee-info {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 200px;
+}
+
+.modal {
+  position: absolute;
+  top: calc(50vh - 195px);
+  left: calc(50vw - 410px);
+  width: 820px;
+  height: 390px;
+  display: none;
+  background-color: black;
+}
+
+.line-white {
+  border: 1.2px solid white;
+  background-color: black;
+  width: 770px;
+  height: 340px;
+  margin: 25px;
+}
+
+.col-4 {
+  width: 294px;
+  background-color: black;
+}
+
+.col-6 {
+  width: 446px;
+  background-color: black;
+  margin-left: 30px;
+}
+
+#one {
+  display: block;
+}
+.h-170 {
+  height: 170px;
+}
+.col-1 {
+  width: 96px;
+  background-color: black;
+}
+
+.col-3 {
+  width: 198px;
+  background-color: black;
+}
+.country {
+  font-size: 2.2rem;
+}
+.coffee-name {
+  font-size: 3.6rem;
+  line-height: 0.97;
+}
+.text {
+  font-size: 0.8rem;
+  line-height: 1.7;
+  height: 110px;
+  margin: 0;
+  padding-top: 30px;
+}
+.h-30 {
+  height: 30px;
+}
+.h-28 {
+  height: 28px;
+}
+.line {
+  width: 37.8px;
+  border-left: 2px solid white;
+  height: 12px;
+  margin: auto;
+}
+.line-right {
+  border-right: 2px solid white;
+}
+.text-white {
+  color: white;
+}
+.img {
+  /* height: 100%;
+  margin: auto;
+  display: block; */
+  width: 100%;
+  margin: auto;
+  display: block;
+  overflow: hidden;
+}
+.roasting {
+  width: 270px;
+  height: 30px;
+}
+.roasting-point {
+  width: 159px;
+  height: 30px;
+  text-align: right;
+}
+.level {
+  height: 15px;
+}
+
+.level-1 {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  width: 38.8px;
+  margin-top: 13px;
+}
+.level-2 {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  width: 77.6px;
+  margin-top: 13px;
+}
+.level-3 {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  width: 116.4px;
+  margin-top: 13px;
+}
+.level-4 {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  width: 155.2px;
+  margin-top: 13px;
+}
+.level-5 {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  width: 194px;
+  margin-top: 13px;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body,
+h2 {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.section-scroll {
+  height: 100vh;
+  background: url("./img/coffee_bg.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+  position: relative;
+}
+
+h2 {
+  top: 45vh;
+  position: sticky;
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: 500;
+  font-family: "MapoGoldenPier";
+}

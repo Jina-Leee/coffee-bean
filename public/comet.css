@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  perspective: 800px;
+}
+#comet {
+  width: 30px;
+  height: 30px;
+
+  position: absolute;
+  left: calc(50% - 15px);
+  top: calc(40vh - 15px);
+  animation: jump 3s forwards infinite linear;
+  transform-origin: 50%;
+}
+#subcomet {
+  width: 30px;
+  height: 30px;
+  background: black;
+  position: absolute;
+  left: 600px;
+}
+@keyframes jump {
+  0% {
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
