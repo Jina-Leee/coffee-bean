@@ -1,0 +1,20 @@
+.shiftani {
+  width: 50vw;
+  height: 70vh;
+  background: url(./img/flags.png);
+  background-size: 50vw auto;
+  animation: shift 2s infinite linear;
+}
+
+@keyframes shift {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -50vw 0;
+  }
+}
+
+#flow {
+  height: 50vh;
+}

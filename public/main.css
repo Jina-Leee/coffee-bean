@@ -54,6 +54,9 @@ p {
 }
 
 .nav {
+  position: fixed;
+  width: 100vw;
+  top: 0;
   background: black;
   height: 50px;
 }
@@ -148,8 +151,9 @@ p {
   height: 170px;
 }
 .col-1 {
-  width: 96px;
+  width: 86px;
   background-color: black;
+  padding-left: 10px;
 }
 
 .col-3 {
