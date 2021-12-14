@@ -1,9 +1,12 @@
-.shiftani {
-  width: 50vw;
-  height: 70vh;
+.shift-ani {
+  width: 100vw;
+  height: 20vh;
   background: url(./img/flags.png);
-  background-size: 50vw auto;
-  animation: shift 2s infinite linear;
+  background-size: 3600px auto;
+  animation: shift 10s infinite linear;
+  background-repeat: repeat-x;
+  margin-top: 180px;
+  margin-bottom: 80px;
 }
 
 @keyframes shift {
@@ -11,10 +14,6 @@
     background-position: 0 0;
   }
   to {
-    background-position: -50vw 0;
+    background-position: -3600px 0;
   }
-}
-
-#flow {
-  height: 50vh;
 }

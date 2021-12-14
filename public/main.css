@@ -1,5 +1,9 @@
-html {
+/* html {
   font-family: "Noto Serif", serif;
+} */
+
+* {
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -20,12 +24,24 @@ html {
 } */
 
 body,
+h2,
 h3,
 p {
   margin: 0;
 }
 
-.s1 {
+h2 {
+  color: white;
+  top: 45vh;
+  position: sticky;
+  font-size: 1.7rem;
+  line-height: 1.4;
+  text-align: center;
+  font-weight: 500;
+  font-family: "MapoGoldenPier";
+}
+
+#sectionMain {
   position: relative;
   height: 100vh;
 }
@@ -35,7 +51,7 @@ p {
   height: 100vh;
 }
 
-.s3 {
+.sectionWorld {
   position: relative;
   height: 100vh;
 }
@@ -55,37 +71,50 @@ p {
 
 .nav {
   position: fixed;
-  width: 100vw;
-  top: 0;
-  background: black;
+  top: 45vh;
   height: 50px;
+  z-index: 3;
 }
 
 .nav-text {
-  color: white;
+  color: #181818;
   margin: auto;
+}
+
+.title {
+  font-family: "Handlee", cursive;
+  font-size: 4.6rem;
+  text-align: center;
+  font-weight: 400;
+  color: black;
+  width: 800px;
+  padding-top: 50px;
+  margin-bottom: 20px;
+  margin-left: 100px;
 }
 
 #earth {
   width: 500px;
   height: 510px;
   margin-left: 250px;
-  margin-top: 100px;
 }
 
-.title {
-  width: 800px;
-  margin: 20px 100px;
+.rotate-text {
+  font-family: "Handlee", cursive;
+  color: black;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 1.2rem;
 }
 
 .scroll-text {
   text-align: center;
 }
 
-.nav-html:hover {
+/* .nav-html:hover {
   opacity: 0.5;
   transition: all 0.3s;
-}
+} */
 
 /* .story-section {
   height: 1080px;
@@ -97,22 +126,21 @@ p {
 }
 
 .worldmap {
-  width: 1400px;
-  margin: auto;
-  padding-top: 50px;
-  margin-bottom: 300px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .worldmap-img {
-  margin-top: 100px;
   width: 1400px;
+  margin-top: 100px;
+  margin-left: calc(50vw - 715px);
 }
 
 .coffee-info {
   position: relative;
   width: 100vw;
   height: 100vh;
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
 }
 
 .modal {
@@ -122,43 +150,55 @@ p {
   width: 820px;
   height: 390px;
   display: none;
-  background-color: black;
+  background-color: #ffffff;
+  border-radius: 20px;
+  z-index: 200;
+}
+
+.cancel {
+  position: absolute;
+  z-index: 240;
+  top: 265px;
+  left: 1197px;
+}
+
+.cancel > img {
+  width: 20px;
 }
 
 .line-white {
   border: 1.2px solid white;
-  background-color: black;
+  background-color: #ffffff;
   width: 770px;
   height: 340px;
   margin: 25px;
 }
 
+.one {
+  display: block;
+}
 .col-4 {
   width: 294px;
-  background-color: black;
+  overflow: hidden;
 }
 
 .col-6 {
+  font-family: "Handlee", cursive;
   width: 446px;
-  background-color: black;
   margin-left: 30px;
 }
 
-#one {
-  display: block;
-}
 .h-170 {
   height: 170px;
 }
 .col-1 {
+  font-family: "Handlee", cursive;
   width: 86px;
-  background-color: black;
   padding-left: 10px;
 }
 
 .col-3 {
   width: 198px;
-  background-color: black;
 }
 .country {
   font-size: 2.2rem;
@@ -167,13 +207,17 @@ p {
   font-size: 3.6rem;
   line-height: 0.97;
 }
+
 .text {
-  font-size: 0.8rem;
+  /* font-family: "MapoGoldenPier"; */
+  font-family: "Noto Serif", serif;
+  font-size: 0.9rem;
   line-height: 1.7;
   height: 110px;
   margin: 0;
   padding-top: 30px;
 }
+
 .h-30 {
   height: 30px;
 }
@@ -182,13 +226,14 @@ p {
 }
 .line {
   width: 37.8px;
-  border-left: 2px solid white;
-  height: 12px;
+  border-left: 1.8px solid black;
+  height: 8px;
   margin: auto;
 }
 .line-right {
-  border-right: 2px solid white;
+  border-right: 1.8px solid black;
 }
+
 .text-white {
   color: white;
 }
@@ -204,6 +249,8 @@ p {
 .roasting {
   width: 270px;
   height: 30px;
+  /* font-family: "MapoGoldenPier"; */
+  font-family: "Noto Serif", serif;
 }
 .roasting-point {
   width: 159px;
@@ -215,45 +262,34 @@ p {
 }
 
 .level-1 {
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 0.8px solid black;
+  border-bottom: 0.8px solid black;
   width: 38.8px;
-  margin-top: 13px;
+  margin-top: 12px;
 }
 .level-2 {
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 0.8px solid black;
+  border-bottom: 0.8px solid black;
   width: 77.6px;
-  margin-top: 13px;
+  margin-top: 12px;
 }
 .level-3 {
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 0.8px solid black;
+  border-bottom: 0.8px solid black;
   width: 116.4px;
-  margin-top: 13px;
+  margin-top: 12px;
 }
 .level-4 {
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 0.8px solid black;
+  border-bottom: 0.8px solid black;
   width: 155.2px;
-  margin-top: 13px;
+  margin-top: 12px;
 }
 .level-5 {
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 0.8px solid black;
+  border-bottom: 0.8px solid black;
   width: 194px;
-  margin-top: 13px;
-}
-
-* {
-  scroll-behavior: smooth;
-}
-
-body,
-h2 {
-  margin: 0;
-  padding: 0;
-  color: white;
+  margin-top: 12px;
 }
 
 .section-scroll {
@@ -264,11 +300,118 @@ h2 {
   position: relative;
 }
 
-h2 {
-  top: 45vh;
-  position: sticky;
-  font-size: 1.7rem;
-  text-align: center;
-  font-weight: 500;
+.coffee-test {
+  text-decoration: none;
+  font-size: 1.4rem;
+  letter-spacing: -0.2;
+  word-spacing: -0.4;
+  color: #181818;
+  font-weight: 700;
   font-family: "MapoGoldenPier";
+}
+
+.recommend {
+  text-align: center;
+  margin-bottom: 140px;
+}
+
+.click-here {
+  font-size: 1.2rem;
+}
+
+.click-icon {
+  width: 14px;
+  height: 10px;
+  margin-top: 6px;
+  margin-right: 10px;
+}
+
+.click-up {
+  margin-top: 10px;
+  margin-left: calc(50vw - 29.6px);
+}
+
+.dot {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  border: solid black 4px;
+  background: #ffc933;
+  z-index: 50;
+}
+
+#mexico {
+  top: 400px;
+  left: 260px;
+}
+#ethiopia {
+  top: 465px;
+  left: 885px;
+}
+#kenya {
+  top: 505px;
+  left: 895px;
+}
+#tanzania {
+  top: 560px;
+  left: 875px;
+}
+
+#yemen {
+  top: 410px;
+  left: 943px;
+}
+
+#india {
+  top: 400px;
+  left: 1090px;
+}
+#indonesia {
+  top: 525px;
+  left: 1280px;
+}
+#papua {
+  top: 533px;
+  left: 1413px;
+}
+#cuba {
+  top: 400px;
+  left: 355px;
+}
+#jamaica {
+  top: 425px;
+  left: 383px;
+}
+#gutemala {
+  top: 415px;
+  left: 300px;
+}
+#panama {
+  top: 450px;
+  left: 335px;
+}
+#hawaii {
+  top: 325px;
+  left: 1535px;
+}
+#colombia {
+  top: 480px;
+  left: 380px;
+}
+#brazil {
+  top: 535px;
+  left: 465px;
+}
+
+#black {
+  /* display: none; */
+  position: absolute;
+  background: black;
+  opacity: 80%;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 105vh;
 }

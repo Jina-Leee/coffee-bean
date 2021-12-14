@@ -4,35 +4,45 @@
     <link rel="stylesheet" href="./main.css" />
     <link rel="stylesheet" href="./comet.css" />
     <link rel="stylesheet" href="./animate.css" />
-    <link rel="sytlesheet" href="./flow.css" />
-    <link
+    <link rel="stylesheet" href="./flow.css" />
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
       rel="stylesheet"
-    />
+    /> -->
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&display=swap"
       rel="stylesheet"
     />
   </head>
   <header>
     <nav class="nav">
-      <div class="row flex">
-        <div class="nav-text col">logo</div>
-        <div class="nav-text col">travel</div>
-        <div class="nav-text col">test</div>
-      </div>
+      <a href="#sectionMain">rotate the world</a>
+      <a href="#sectionWorld">traveling around the world</a>
+      <a href="./test/index.html">get coffee beans recommendations</a>
     </nav>
+    <!-- section-main(id), section-scroll(class)/s1(id), sectionWorld(id)순으로~ -->
   </header>
   <body>
-    <section class="s1">
+    <section id="sectionMain">
       <section class="row">
+        <div class="title">
+          Traveling around the world <br />
+          with coffee beans
+        </div>
         <div id="comet">
           <div id="subcomet"></div>
         </div>
         <iframe src="./earth.html" frameborder="0" id="earth"></iframe>
-        <div>
-          <img src="title.png" class="title" />
-        </div>
+        <p class="rotate-text">Drag and rotate the world map.</p>
       </section>
     </section>
 
@@ -60,13 +70,47 @@
       <h2>커피 원두와 함께 세계여행을 떠나봐요 :)</h2>
     </section>
 
-    <section class="s3">
+    <section id="sectionWorld">
       <section class="coffee-info">
-        <section class="worldmap">
-          <div>
-            <img src="worldmap.png" class="worldmap-img" />
+        <div id="black"></div>
+          <div class="worldmap">
+            <img src="./img/worldmap.png" class="worldmap-img" />
+            
           </div>
-          <div class="modal mexico-modal" id="one">
+
+          <div class="dot" id="mexico"></div>
+          <div class="dot" id="ethiopia"></div>
+          <div class="dot" id="kenya"></div>
+          <div class="dot" id="tanzania"></div>
+          <div class="dot" id="yemen"></div>
+          <div class="dot" id="india"></div>
+          <div class="dot" id="indonesia"></div>
+          <div class="dot" id="papua"></div>
+          <div class="dot" id="cuba"></div>
+          <div class="dot" id="jamaica"></div>
+          <div class="dot" id="gutemala"></div>
+          <div class="dot" id="panama"></div>
+          <div class="dot" id="hawaii"></div>
+          <div class="dot" id="colombia"></div>
+          <div class="dot" id="brazil"></div>
+
+          <div class="cancel" id="mexico-cancel"><img src="./img/cancel.png" ></div>
+          <div class="cancel" id="ethiopia-cancel"><img src="./img/cancel.png" ></div>
+          <div class="cancel" id="kenya-cancel"><img src="./img/cancel.png" ></div>
+          <div class="cancel" id="tanzania-cancel"><img src="./img/cancel.png" ></div>
+          <div class="cancel" id="yemen-cancel"><img src="./img/cancel.png" ></div>
+          <div class="cancel" id="india-cancel"><img src="./img/cancel.png" ></div>
+          <div class="cancel" id="indonesia-cancel"><img src="./img/cancel.png" ></div>
+          <div class="cancel" id="papua-cancel"><img src="./img/cancel.png" ></div>
+          <div class="cancel" id="cuba-cancel"><img src="./img/cancel.png" ></div>
+          <div class="cancel" id="jamaica-cancel"><img src="./img/cancel.png" ></div>
+          <div class="cancel" id="gutemala-cancel"><img src="./img/cancel.png" ></div>
+          <div class="cancel" id="panama-cancel"><img src="./img/cancel.png" ></div>
+          <div class="cancel" id="hawaii-cancel"><img src="./img/cancel.png" ></div>
+          <div class="cancel" id="colombia-cancel"><img src="./img/cancel.png" ></div>
+          <div class="cancel" id="brazil-cancel"><img src="./img/cancel.png" ></div>
+
+          <div class="modal one" id="mexico-modal">
             <div class="modal_body">
               <div class="line-white">
                 <div class="flex">
@@ -74,20 +118,18 @@
                     <img src="./img/mexico.png" class="img" />
                   </div>
                   <div class="col-6 h-170">
-                    <div class="country text-white margin-left">Mexico</div>
-                    <div class="coffee-name text-white margin-left">
-                      Tapachula
-                    </div>
+                    <div class="country margin-left" style="margin-top: 15px;">Mexico</div>
+                    <div class="coffee-name margin-left" style="margin-top: 25px;">Tapachula</div>
                   </div>
                 </div>
                 <div class="flex">
                   <div class="col-1 h-170">
                     <div class="h-30"></div>
-                    <div class="h-28 text-white">Body</div>
-                    <div class="h-28 text-white">Acidity</div>
-                    <div class="h-28 text-white">Sweet</div>
-                    <div class="h-28 text-white">Bitterness</div>
-                    <div class="h-28 text-white">Balance</div>
+                    <div class="h-28">Body</div>
+                    <div class="h-28">Acidity</div>
+                    <div class="h-28">Sweet</div>
+                    <div class="h-28">Bitterness</div>
+                    <div class="h-28">Balance</div>
                   </div>
                   <div class="col-3 h-170">
                     <div class="h-30 flex">
@@ -104,7 +146,7 @@
                     <div class="level"><div class="level-3"></div></div>
                   </div>
                   <div class="col-6">
-                    <p class="text text-white">
+                    <p class="text">
                       단맛은 적고 쓴맛이 좀 더 느껴지는 부드러운 신맛이
                       있으며<br />
                       바디감은 중간 정도이고 고소한 향이 있는 커피. 멕시코
@@ -112,8 +154,8 @@
                       지역에서 유기농법으로 재배된다.
                     </p>
                     <div class="flex">
-                      <div class="text-white roasting">권장 로스팅 포인트</div>
-                      <div class="text-white roasting-point">CITY</div>
+                      <div class="roasting">권장 로스팅 포인트</div>
+                      <div class="roasting-point">CITY</div>
                     </div>
                   </div>
                 </div>
@@ -121,7 +163,7 @@
             </div>
           </div>
 
-          <div class="modal ethiopia-modal" id="">
+          <div class="modal" id="ethiopia-modal">
             <div class="modal_body">
               <div class="line-white">
                 <div class="flex">
@@ -129,20 +171,18 @@
                     <img src="./img/ethiopia.png" class="img" />
                   </div>
                   <div class="col-6 h-170">
-                    <div class="country text-white margin-left">Ethiopia</div>
-                    <div class="coffee-name text-white margin-left">
-                      Yirgacheffe
-                    </div>
+                    <div class="country margin-left" style="margin-top: 15px;">Ethiopia</div>
+                    <div class="coffee-name margin-left" style="margin-top: 25px;">Yirgacheffe</div>
                   </div>
                 </div>
                 <div class="flex">
                   <div class="col-1 h-170">
                     <div class="h-30"></div>
-                    <div class="h-28 text-white">Body</div>
-                    <div class="h-28 text-white">Acidity</div>
-                    <div class="h-28 text-white">Sweet</div>
-                    <div class="h-28 text-white">Bitterness</div>
-                    <div class="h-28 text-white">Balance</div>
+                    <div class="h-28">Body</div>
+                    <div class="h-28">Acidity</div>
+                    <div class="h-28">Sweet</div>
+                    <div class="h-28">Bitterness</div>
+                    <div class="h-28">Balance</div>
                   </div>
                   <div class="col-3 h-170">
                     <div class="h-30 flex">
@@ -159,15 +199,15 @@
                     <div class="level"><div class="level-2"></div></div>
                   </div>
                   <div class="col-6">
-                    <p class="text text-white">
+                    <p class="text">
                       중간 정도의 두드러진 향과 진한 산미가 있으며, 과일 향의
                       아로마, <br />달콤한 과일 맛, 꽃향기, 실크처럼 부드러운
                       바디감이 매우 인상적인 커피. <br />예가체프는 세련되고
                       매끄러운 커피로 ‘커피의 귀부인’으로 불린다.
                     </p>
                     <div class="flex">
-                      <div class="text-white roasting">권장 로스팅 포인트</div>
-                      <div class="text-white roasting-point">HIGH</div>
+                      <div class="roasting">권장 로스팅 포인트</div>
+                      <div class="roasting-point">HIGH</div>
                     </div>
                   </div>
                 </div>
@@ -175,7 +215,7 @@
             </div>
           </div>
 
-          <div class="modal kenya-modal" id="">
+          <div class="modal" id="kenya-modal">
             <div class="modal_body">
               <div class="line-white">
                 <div class="flex">
@@ -183,20 +223,18 @@
                     <img src="./img/kenya.png" class="img" />
                   </div>
                   <div class="col-6 h-170">
-                    <div class="country text-white margin-left">Kenya</div>
-                    <div class="coffee-name text-white margin-left">
-                      Kenya AA
-                    </div>
+                    <div class="country margin-left" style="margin-top: 15px;">Kenya</div>
+                    <div class="coffee-name margin-left" style="margin-top: 25px;">Kenya AA</div>
                   </div>
                 </div>
                 <div class="flex">
                   <div class="col-1 h-170">
                     <div class="h-30"></div>
-                    <div class="h-28 text-white">Body</div>
-                    <div class="h-28 text-white">Acidity</div>
-                    <div class="h-28 text-white">Sweet</div>
-                    <div class="h-28 text-white">Bitterness</div>
-                    <div class="h-28 text-white">Balance</div>
+                    <div class="h-28">Body</div>
+                    <div class="h-28">Acidity</div>
+                    <div class="h-28">Sweet</div>
+                    <div class="h-28">Bitterness</div>
+                    <div class="h-28">Balance</div>
                   </div>
                   <div class="col-3 h-170">
                     <div class="h-30 flex">
@@ -213,13 +251,13 @@
                     <div class="level"><div class="level-4"></div></div>
                   </div>
                   <div class="col-6">
-                    <p class="text text-white">
+                    <p class="text">
                       신맛이 깔끔하면서도 산뜻하며 바디감이 좋은 커피로 신맛을
                       좋아하는 <br />사람들이 주로 마시는 커피.
                     </p>
                     <div class="flex">
-                      <div class="text-white roasting">권장 로스팅 포인트</div>
-                      <div class="text-white roasting-point">FULL CITY</div>
+                      <div class="roasting">권장 로스팅 포인트</div>
+                      <div class="roasting-point">FULL CITY</div>
                     </div>
                   </div>
                 </div>
@@ -227,7 +265,7 @@
             </div>
           </div>
 
-          <div class="modal tanzania-modla" id="">
+          <div class="modal" id="tanzania-modla">
             <div class="modal_body">
               <div class="line-white">
                 <div class="flex">
@@ -235,20 +273,18 @@
                     <img src="./img/tanzania.png" class="img" />
                   </div>
                   <div class="col-6 h-170">
-                    <div class="country text-white margin-left">Tanzania</div>
-                    <div class="coffee-name text-white margin-left">
-                      Kilimanjaro
-                    </div>
+                    <div class="country margin-left" style="margin-top: 15px;">Tanzania</div>
+                    <div class="coffee-name margin-left" style="margin-top: 25px;">Kilimanjaro</div>
                   </div>
                 </div>
                 <div class="flex">
                   <div class="col-1 h-170">
                     <div class="h-30"></div>
-                    <div class="h-28 text-white">Body</div>
-                    <div class="h-28 text-white">Acidity</div>
-                    <div class="h-28 text-white">Sweet</div>
-                    <div class="h-28 text-white">Bitterness</div>
-                    <div class="h-28 text-white">Balance</div>
+                    <div class="h-28">Body</div>
+                    <div class="h-28">Acidity</div>
+                    <div class="h-28">Sweet</div>
+                    <div class="h-28">Bitterness</div>
+                    <div class="h-28">Balance</div>
                   </div>
                   <div class="col-3 h-170">
                     <div class="h-30 flex">
@@ -265,14 +301,14 @@
                     <div class="level"><div class="level-4"></div></div>
                   </div>
                   <div class="col-6">
-                    <p class="text text-white">
+                    <p class="text">
                       ‘커피의 신사’, ‘영국 왕실의 커피’ 이자 헤밍웨이가 사랑한
                       커피로 아프리카계의 커피답게 맛이 진하며 떫은맛이 약한
                       대신 신맛이 뛰어나고 풍부하면서도 부드러운 맛을 가진 커피.
                     </p>
                     <div class="flex">
-                      <div class="text-white roasting">권장 로스팅 포인트</div>
-                      <div class="text-white roasting-point">FULL CITY</div>
+                      <div class="roasting">권장 로스팅 포인트</div>
+                      <div class="roasting-point">FULL CITY</div>
                     </div>
                   </div>
                 </div>
@@ -280,7 +316,7 @@
             </div>
           </div>
 
-          <div class="modal yemen-modal" id="">
+          <div class="modal" id="yemen-modal">
             <div class="modal_body">
               <div class="line-white">
                 <div class="flex">
@@ -288,18 +324,18 @@
                     <img src="./img/yemen.png" class="img" />
                   </div>
                   <div class="col-6 h-170">
-                    <div class="country text-white margin-left">Yemen</div>
-                    <div class="coffee-name text-white margin-left">Mocha</div>
+                    <div class="country margin-left" style="margin-top: 15px;">Yemen</div>
+                    <div class="coffee-name margin-left" style="margin-top: 25px;">Mocha</div>
                   </div>
                 </div>
                 <div class="flex">
                   <div class="col-1 h-170">
                     <div class="h-30"></div>
-                    <div class="h-28 text-white">Body</div>
-                    <div class="h-28 text-white">Acidity</div>
-                    <div class="h-28 text-white">Sweet</div>
-                    <div class="h-28 text-white">Bitterness</div>
-                    <div class="h-28 text-white">Aroma</div>
+                    <div class="h-28">Body</div>
+                    <div class="h-28">Acidity</div>
+                    <div class="h-28">Sweet</div>
+                    <div class="h-28">Bitterness</div>
+                    <div class="h-28">Aroma</div>
                   </div>
                   <div class="col-3 h-170">
                     <div class="h-30 flex">
@@ -316,14 +352,13 @@
                     <div class="level"><div class="level-3"></div></div>
                   </div>
                   <div class="col-6">
-                    <p class="text text-white">
+                    <p class="text">
                       달콤한 과일 향과 초콜릿 향, 부드러운 신맛, 적당히 쓴맛이
                       있는<br />
                       중간 정도의 바디감을 가진 커피.
                     </p>
                     <div class="flex">
-                      <div class="text-white roasting">권장 로스팅 포인트</div>
-                      <div class="text-white roasting-point">FULL CITY</div>
+                      <div class="roasting-point">FULL CITY</div>
                     </div>
                   </div>
                 </div>
@@ -331,7 +366,7 @@
             </div>
           </div>
 
-          <div class="modal india-modal" id="">
+          <div class="modal" id="india-modal">
             <div class="modal_body">
               <div class="line-white">
                 <div class="flex">
@@ -339,8 +374,8 @@
                     <img src="./img/india.png" class="img" />
                   </div>
                   <div class="col-6 h-170">
-                    <div class="country text-white margin-left">India</div>
-                    <div class="coffee-name text-white margin-left">
+                    <div class="country margin-left" style="margin-top: 7px;">India</div>
+                    <div class="coffee-name margin-left" style="margin-top: 7px;">
                       Monsooned<br />
                       Malabar
                     </div>
@@ -349,11 +384,11 @@
                 <div class="flex">
                   <div class="col-1 h-170">
                     <div class="h-30"></div>
-                    <div class="h-28 text-white">Body</div>
-                    <div class="h-28 text-white">Acidity</div>
-                    <div class="h-28 text-white">Sweet</div>
-                    <div class="h-28 text-white">Bitterness</div>
-                    <div class="h-28 text-white">Aroma</div>
+                    <div class="h-28">Body</div>
+                    <div class="h-28">Acidity</div>
+                    <div class="h-28">Sweet</div>
+                    <div class="h-28">Bitterness</div>
+                    <div class="h-28">Aroma</div>
                   </div>
                   <div class="col-3 h-170">
                     <div class="h-30 flex">
@@ -370,15 +405,15 @@
                     <div class="level"><div class="level-2"></div></div>
                   </div>
                   <div class="col-6">
-                    <p class="text text-white">
+                    <p class="text">
                       신맛이 강하고 단맛과 쓴맛이 조화롭고 고소한 향을 가진
                       커피.<br />
                       커피가 숙성되고 특유의 향을 가지도록 몬순 (남서 계절풍)을
                       이용해 <br />인위적으로 만든다.
                     </p>
                     <div class="flex">
-                      <div class="text-white roasting">권장 로스팅 포인트</div>
-                      <div class="text-white roasting-point">CITY</div>
+                      <div class="roasting">권장 로스팅 포인트</div>
+                      <div class="roasting-point">CITY</div>
                     </div>
                   </div>
                 </div>
@@ -386,7 +421,7 @@
             </div>
           </div>
 
-          <div class="modal indonesia-modal" id="">
+          <div class="modal" id="indonesia-modal">
             <div class="modal_body">
               <div class="line-white">
                 <div class="flex">
@@ -394,8 +429,8 @@
                     <img src="./img/indonesia.jpg" class="img" />
                   </div>
                   <div class="col-6 h-170">
-                    <div class="country text-white margin-left">Indonesia</div>
-                    <div class="coffee-name text-white margin-left">
+                    <div class="country margin-left" style="margin-top: 5px;">Indonesia</div>
+                    <div class="coffee-name margin-left" style="margin-top: 5px;">
                       Mandheling <br />High G1
                     </div>
                   </div>
@@ -403,11 +438,11 @@
                 <div class="flex">
                   <div class="col-1 h-170">
                     <div class="h-30"></div>
-                    <div class="h-28 text-white">Body</div>
-                    <div class="h-28 text-white">Acidity</div>
-                    <div class="h-28 text-white">Sweet</div>
-                    <div class="h-28 text-white">Bitterness</div>
-                    <div class="h-28 text-white">Balance</div>
+                    <div class="h-28">Body</div>
+                    <div class="h-28">Acidity</div>
+                    <div class="h-28">Sweet</div>
+                    <div class="h-28">Bitterness</div>
+                    <div class="h-28">Balance</div>
                   </div>
                   <div class="col-3 h-170">
                     <div class="h-30 flex">
@@ -429,8 +464,8 @@
                       커피의 대명사.
                     </p>
                     <div class="flex">
-                      <div class="text-white roasting">권장 로스팅 포인트</div>
-                      <div class="text-white roasting-point">FULL CITY</div>
+                      <div class="roasting">권장 로스팅 포인트</div>
+                      <div class="roasting-point">FULL CITY</div>
                     </div>
                   </div>
                 </div>
@@ -438,7 +473,7 @@
             </div>
           </div>
 
-          <div class="modal papua-modal" id="">
+          <div class="modal" id="papua-modal">
             <div class="modal_body">
               <div class="line-white">
                 <div class="flex">
@@ -446,20 +481,18 @@
                     <img src="./img/papua-new-guinea.png" class="img" />
                   </div>
                   <div class="col-6 h-170">
-                    <div class="country text-white margin-left">
-                      Papua New Guinea
-                    </div>
-                    <div class="coffee-name text-white margin-left">Sigri</div>
+                    <div class="country margin-left" style="margin-top: 15px;">Papua New Guinea</div>
+                    <div class="coffee-name margin-left" style="margin-top: 25px;">Sigri</div>
                   </div>
                 </div>
                 <div class="flex">
                   <div class="col-1 h-170">
                     <div class="h-30"></div>
-                    <div class="h-28 text-white">Body</div>
-                    <div class="h-28 text-white">Acidity</div>
-                    <div class="h-28 text-white">Sweet</div>
-                    <div class="h-28 text-white">Bitterness</div>
-                    <div class="h-28 text-white">Balance</div>
+                    <div class="h-28">Body</div>
+                    <div class="h-28">Acidity</div>
+                    <div class="h-28">Sweet</div>
+                    <div class="h-28">Bitterness</div>
+                    <div class="h-28">Balance</div>
                   </div>
                   <div class="col-3 h-170">
                     <div class="h-30 flex">
@@ -476,14 +509,14 @@
                     <div class="level"><div class="level-4"></div></div>
                   </div>
                   <div class="col-6">
-                    <p class="text text-white">
+                    <p class="text">
                       블루마운틴 품종답게 과일 향, 꽃 향을 느낄 수 있고 상큼한
                       신맛과 <br />적절한 쓴맛, 단맛과 조화로운 풍부하고 리치한
                       맛과 향이 일품인 커피.
                     </p>
                     <div class="flex">
-                      <div class="text-white roasting">권장 로스팅 포인트</div>
-                      <div class="text-white roasting-point">HIGH & CITY</div>
+                      <div class="roasting">권장 로스팅 포인트</div>
+                      <div class="roasting-point">HIGH & CITY</div>
                     </div>
                   </div>
                 </div>
@@ -491,7 +524,7 @@
             </div>
           </div>
 
-          <div class="modal cuba-modal" id="">
+          <div class="modal" id="cuba-modal">
             <div class="modal_body">
               <div class="line-white">
                 <div class="flex">
@@ -499,8 +532,8 @@
                     <img src="./img/cuba.png" class="img" />
                   </div>
                   <div class="col-6 h-170">
-                    <div class="country text-white margin-left">Cuba</div>
-                    <div class="coffee-name text-white margin-left">
+                    <div class="country margin-left" style="margin-top: 2px;">Cuba</div>
+                    <div class="coffee-name margin-left" style="margin-top: 2px;">
                       Crystal<br />Mountain
                     </div>
                   </div>
@@ -508,11 +541,11 @@
                 <div class="flex">
                   <div class="col-1 h-170">
                     <div class="h-30"></div>
-                    <div class="h-28 text-white">Body</div>
-                    <div class="h-28 text-white">Acidity</div>
-                    <div class="h-28 text-white">Sweet</div>
-                    <div class="h-28 text-white">Bitterness</div>
-                    <div class="h-28 text-white">Balance</div>
+                    <div class="h-28">Body</div>
+                    <div class="h-28">Acidity</div>
+                    <div class="h-28">Sweet</div>
+                    <div class="h-28">Bitterness</div>
+                    <div class="h-28">Balance</div>
                   </div>
                   <div class="col-3 h-170">
                     <div class="h-30 flex">
@@ -529,15 +562,15 @@
                     <div class="level"><div class="level-3"></div></div>
                   </div>
                   <div class="col-6">
-                    <p class="text text-white">
+                    <p class="text">
                       숙도가 높고 맛은 신맛, 쓴맛, 은은한 단맛, 어느 한 곳에
                       치우치지 않은 <br />깨끗하고 산뜻한 맛으로 스트레이트로
                       마시면 블루마운틴에 버금가는<br />
                       맛의 커피.
                     </p>
                     <div class="flex">
-                      <div class="text-white roasting">권장 로스팅 포인트</div>
-                      <div class="text-white roasting-point">HIGH & CITY</div>
+                      <div class="roasting">권장 로스팅 포인트</div>
+                      <div class="roasting-point">HIGH & CITY</div>
                     </div>
                   </div>
                 </div>
@@ -545,7 +578,7 @@
             </div>
           </div>
 
-          <div class="modal jamaica-modal" id="">
+          <div class="modal" id="jamaica-modal">
             <div class="modal_body">
               <div class="line-white">
                 <div class="flex">
@@ -553,8 +586,8 @@
                     <img src="./img/jamaica.png" class="img" />
                   </div>
                   <div class="col-6 h-170">
-                    <div class="country text-white margin-left">Jamaica</div>
-                    <div class="coffee-name text-white margin-left">
+                    <div class="country margin-left" style="margin-top: 2px;">Jamaica</div>
+                    <div class="coffee-name margin-left" style="margin-top: 2px;">
                       Blue<br />Mountain
                     </div>
                   </div>
@@ -562,11 +595,11 @@
                 <div class="flex">
                   <div class="col-1 h-170">
                     <div class="h-30"></div>
-                    <div class="h-28 text-white">Body</div>
-                    <div class="h-28 text-white">Acidity</div>
-                    <div class="h-28 text-white">Sweet</div>
-                    <div class="h-28 text-white">Bitterness</div>
-                    <div class="h-28 text-white">Balance</div>
+                    <div class="h-28">Body</div>
+                    <div class="h-28">Acidity</div>
+                    <div class="h-28">Sweet</div>
+                    <div class="h-28">Bitterness</div>
+                    <div class="h-28">Balance</div>
                   </div>
                   <div class="col-3 h-170">
                     <div class="h-30 flex">
@@ -583,15 +616,15 @@
                     <div class="level"><div class="level-4"></div></div>
                   </div>
                   <div class="col-6">
-                    <p class="text text-white">
+                    <p class="text">
                       세계 3대 커피 중의 하나로 ‘커피의 황제’로 불림. 옅은
                       신맛과 와인과 같이<br />
                       쌉쌀한 맛, 부드러운 쓴맛, 단맛과 스모크한 맛까지 각 커피가
                       지니는 맛들을 <br />골고루 지닌 욕심 많은 커피.
                     </p>
                     <div class="flex">
-                      <div class="text-white roasting">권장 로스팅 포인트</div>
-                      <div class="text-white roasting-point">CITY</div>
+                      <div class="roasting">권장 로스팅 포인트</div>
+                      <div class="roasting-point">CITY</div>
                     </div>
                   </div>
                 </div>
@@ -599,7 +632,7 @@
             </div>
           </div>
 
-          <div class="modal guatemala-modal" id="">
+          <div class="modal" id="guatemala-modal">
             <div class="modal_body">
               <div class="line-white">
                 <div class="flex">
@@ -607,20 +640,18 @@
                     <img src="./img/guatemala.jpg" class="img" />
                   </div>
                   <div class="col-6 h-170">
-                    <div class="country text-white margin-left">Guatemala</div>
-                    <div class="coffee-name text-white margin-left">
-                      Antigua
-                    </div>
+                    <div class="country margin-left" style="margin-top: 15px;">Guatemala</div>
+                    <div class="coffee-name margin-left" style="margin-top: 25px;">Antigua</div>
                   </div>
                 </div>
                 <div class="flex">
                   <div class="col-1 h-170">
                     <div class="h-30"></div>
-                    <div class="h-28 text-white">Body</div>
-                    <div class="h-28 text-white">Acidity</div>
-                    <div class="h-28 text-white">Sweet</div>
-                    <div class="h-28 text-white">Bitterness</div>
-                    <div class="h-28 text-white">Balance</div>
+                    <div class="h-28">Body</div>
+                    <div class="h-28">Acidity</div>
+                    <div class="h-28">Sweet</div>
+                    <div class="h-28">Bitterness</div>
+                    <div class="h-28">Balance</div>
                   </div>
                   <div class="col-3 h-170">
                     <div class="h-30 flex">
@@ -637,13 +668,13 @@
                     <div class="level"><div class="level-5"></div></div>
                   </div>
                   <div class="col-6">
-                    <p class="text text-white">
+                    <p class="text">
                       스모크 커피의 대명사. 신맛과 신비로운 향이 첫맛은 단순하나
                       차츰 다양한 <br />맛을 내는 여운이 있는 커피.
                     </p>
                     <div class="flex">
-                      <div class="text-white roasting">권장 로스팅 포인트</div>
-                      <div class="text-white roasting-point">FULL CITY</div>
+                      <div class="roasting">권장 로스팅 포인트</div>
+                      <div class="roasting-point">FULL CITY</div>
                     </div>
                   </div>
                 </div>
@@ -651,7 +682,7 @@
             </div>
           </div>
 
-          <div class="modal panama-modal" id="">
+          <div class="modal" id="panama-modal">
             <div class="modal_body">
               <div class="line-white">
                 <div class="flex">
@@ -659,18 +690,18 @@
                     <img src="./img/panama.png" class="img" />
                   </div>
                   <div class="col-6 h-170">
-                    <div class="country text-white margin-left">Panamá</div>
-                    <div class="coffee-name text-white margin-left">Geisha</div>
+                    <div class="country margin-left" style="margin-top: 15px;">Panamá</div>
+                    <div class="coffee-name margin-left" style="margin-top: 25px;">Geisha</div>
                   </div>
                 </div>
                 <div class="flex">
                   <div class="col-1 h-170">
                     <div class="h-30"></div>
-                    <div class="h-28 text-white">Body</div>
-                    <div class="h-28 text-white">Acidity</div>
-                    <div class="h-28 text-white">Sweet</div>
-                    <div class="h-28 text-white">Bitterness</div>
-                    <div class="h-28 text-white">Aroma</div>
+                    <div class="h-28">Body</div>
+                    <div class="h-28">Acidity</div>
+                    <div class="h-28">Sweet</div>
+                    <div class="h-28">Bitterness</div>
+                    <div class="h-28">Aroma</div>
                   </div>
                   <div class="col-3 h-170">
                     <div class="h-30 flex">
@@ -687,15 +718,15 @@
                     <div class="level"><div class="level-5"></div></div>
                   </div>
                   <div class="col-6">
-                    <p class="text text-white">
+                    <p class="text">
                       꽃 향, 쟈스민, 과일 향, 만다린, 망고의 향이 나며 분명하고
                       상큼하며 달콤함으로 가득하며, 깔끔하고 신선하고 좋은
                       느낌의 복잡한 여운이 풍부하게 담겨 ‘이거 진짜 커피
                       맞아?’하는 생각을 하게 만드는 커피
                     </p>
                     <div class="flex">
-                      <div class="text-white roasting">권장 로스팅 포인트</div>
-                      <div class="text-white roasting-point">LIGHT CITY</div>
+                      <div class="roasting">권장 로스팅 포인트</div>
+                      <div class="roasting-point">LIGHT CITY</div>
                     </div>
                   </div>
                 </div>
@@ -703,7 +734,7 @@
             </div>
           </div>
 
-          <div class="modal hawaii-modal" id="">
+          <div class="modal" id="hawaii-modal">
             <div class="modal_body">
               <div class="line-white">
                 <div class="flex">
@@ -711,8 +742,8 @@
                     <img src="./img/hawaii.png" class="img" />
                   </div>
                   <div class="col-6 h-170">
-                    <div class="country text-white margin-left">Hawaii</div>
-                    <div class="coffee-name text-white margin-left">
+                    <div class="country margin-left" style="margin-top: 3px">Hawaii</div>
+                    <div class="coffee-name margin-left" style="margin-top: 4px">
                       Hawaiian<br />Kona
                     </div>
                   </div>
@@ -720,11 +751,11 @@
                 <div class="flex">
                   <div class="col-1 h-170">
                     <div class="h-30"></div>
-                    <div class="h-28 text-white">Body</div>
-                    <div class="h-28 text-white">Acidity</div>
-                    <div class="h-28 text-white">Sweet</div>
-                    <div class="h-28 text-white">Bitterness</div>
-                    <div class="h-28 text-white">Aroma</div>
+                    <div class="h-28">Body</div>
+                    <div class="h-28">Acidity</div>
+                    <div class="h-28">Sweet</div>
+                    <div class="h-28">Bitterness</div>
+                    <div class="h-28">Aroma</div>
                   </div>
                   <div class="col-3 h-170">
                     <div class="h-30 flex">
@@ -741,14 +772,14 @@
                     <div class="level"><div class="level-4"></div></div>
                   </div>
                   <div class="col-6">
-                    <p class="text text-white">
+                    <p class="text">
                       과일처럼 상큼한 신맛과 잔잔한 단맛으로 유명하며 자메이카
                       블루마운틴과 <br />함께 세계 제2의 프리미엄급 대열에 설
                       정도로 맛과 향기가 뛰어난 커피.
                     </p>
                     <div class="flex">
-                      <div class="text-white roasting">권장 로스팅 포인트</div>
-                      <div class="text-white roasting-point">FULL CITY</div>
+                      <div class="roasting">권장 로스팅 포인트</div>
+                      <div class="roasting-point">FULL CITY</div>
                     </div>
                   </div>
                 </div>
@@ -756,7 +787,7 @@
             </div>
           </div>
 
-          <div class="modal colombia-modal" id="">
+          <div class="modal" id="colombia-modal">
             <div class="modal_body">
               <div class="line-white">
                 <div class="flex">
@@ -764,20 +795,18 @@
                     <img src="./img/colombia.jpeg" class="img" />
                   </div>
                   <div class="col-6 h-170">
-                    <div class="country text-white margin-left">Colombia</div>
-                    <div class="coffee-name text-white margin-left">
-                      Supremo
-                    </div>
+                    <div class="country margin-left" style="margin-top: 20px;">Colombia</div>
+                    <div class="coffee-name margin-left" style="margin-top: 25px;">Supremo</div>
                   </div>
                 </div>
                 <div class="flex">
                   <div class="col-1 h-170">
                     <div class="h-30"></div>
-                    <div class="h-28 text-white">Body</div>
-                    <div class="h-28 text-white">Acidity</div>
-                    <div class="h-28 text-white">Sweet</div>
-                    <div class="h-28 text-white">Bitterness</div>
-                    <div class="h-28 text-white">Aroma</div>
+                    <div class="h-28">Body</div>
+                    <div class="h-28">Acidity</div>
+                    <div class="h-28">Sweet</div>
+                    <div class="h-28">Bitterness</div>
+                    <div class="h-28">Aroma</div>
                   </div>
                   <div class="col-3 h-170">
                     <div class="h-30 flex">
@@ -794,7 +823,7 @@
                     <div class="level"><div class="level-4"></div></div>
                   </div>
                   <div class="col-6">
-                    <p class="text text-white">
+                    <p class="text">
                       마일드 커피의 대명사. 풍부한 바디감과 달콤한 아로마와
                       초콜릿, 캐러멜, <br />과일향이 조화로운 커피
                     </p>
@@ -810,7 +839,7 @@
             </div>
           </div>
 
-          <div class="modal brazil-modal" id="">
+          <div class="modal" id="brazil-modal">
             <div class="modal_body">
               <div class="line-white">
                 <div class="flex">
@@ -818,8 +847,8 @@
                     <img src="./img/brazil.png" class="img" />
                   </div>
                   <div class="col-6 h-170">
-                    <div class="country text-white margin-left">Brazil</div>
-                    <div class="coffee-name text-white margin-left">
+                    <div class="country margin-left" style="margin-top: 5px;">Brazil</div>
+                    <div class="coffee-name margin-left" style="margin-top: 5px;">
                       Bourbon<br />Santos
                     </div>
                   </div>
@@ -827,11 +856,11 @@
                 <div class="flex">
                   <div class="col-1 h-170">
                     <div class="h-30"></div>
-                    <div class="h-28 text-white">Body</div>
-                    <div class="h-28 text-white">Acidity</div>
-                    <div class="h-28 text-white">Sweet</div>
-                    <div class="h-28 text-white">Bitterness</div>
-                    <div class="h-28 text-white">Balance</div>
+                    <div class="h-28">Body</div>
+                    <div class="h-28">Acidity</div>
+                    <div class="h-28">Sweet</div>
+                    <div class="h-28">Bitterness</div>
+                    <div class="h-28">Balance</div>
                   </div>
                   <div class="col-3 h-170">
                     <div class="h-30 flex">
@@ -848,21 +877,18 @@
                     <div class="level"><div class="level-3"></div></div>
                   </div>
                   <div class="col-6">
-                    <p class="text text-white">
+                    <p class="text">
                       산도가 낮고, 부드러우며, 산맛, 단맛, 바디감이 중간으로
                       균형 잡힌 <br />맛이 나는 중성적인 커피.
                     </p>
                     <div class="flex">
-                      <div class="text-white roasting">권장 로스팅 포인트</div>
-                      <div class="text-white roasting-point">
-                        CITY & FULL CITY
-                      </div>
+                      <div class="roasting">권장 로스팅 포인트</div>
+                      <div class="roasting-point">CITY & FULL CITY</div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
         </section>
       </section>
 
@@ -870,8 +896,15 @@
         <div class="modal_body">Modal</div>
       </div> -->
     </section>
-    <section id="flow">
-      <div class="shiftani">안녕하세요</div>
-    </section>
+
+      <div class="shift-ani" ></div>
+    <div class="recommend">
+      <a href="./test/index.html" class="coffee-test">나에게 맞는 원두 추천받기</a>
+      <div class="flex click-up">
+        <img src="./img/click.png" class="click-icon"> 
+        <p class="click-here">click</p>
+      </div>
+
+    </div>
   </body>
 </html>
