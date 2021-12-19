@@ -7,9 +7,9 @@
 }
 
 @font-face {
-  font-family: "MapoGoldenPier";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff")
-    format("woff");
+  font-family: 'MapoGoldenPier';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -38,12 +38,22 @@ h2 {
   line-height: 1.4;
   text-align: center;
   font-weight: 500;
-  font-family: "MapoGoldenPier";
+  font-family: 'MapoGoldenPier';
+}
+
+#earth-container {
+  width: 100vw;
+  height: 510px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 #sectionMain {
   position: relative;
-  height: 100vh;
+  width: 100vw;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  /* height: 100vh; */
 }
 
 .s2 {
@@ -57,7 +67,8 @@ h2 {
 }
 
 .row {
-  width: 1000px;
+  text-align: center;
+  width: 100vw;
   margin: auto;
 }
 
@@ -66,7 +77,7 @@ h2 {
 }
 
 .col {
-  width: 200px;
+  width: 100vw;
 }
 
 .nav {
@@ -82,25 +93,22 @@ h2 {
 }
 
 .title {
-  font-family: "Handlee", cursive;
+  font-family: 'Handlee', cursive;
   font-size: 4.6rem;
   text-align: center;
   font-weight: 400;
   color: black;
-  width: 800px;
   padding-top: 50px;
   margin-bottom: 20px;
-  margin-left: 100px;
 }
 
 #earth {
   width: 500px;
   height: 510px;
-  margin-left: 250px;
 }
 
 .rotate-text {
-  font-family: "Handlee", cursive;
+  font-family: 'Handlee', cursive;
   color: black;
   text-align: center;
   padding-top: 10px;
@@ -127,26 +135,27 @@ h2 {
 
 .worldmap {
   width: 100vw;
-  height: 100vh;
 }
 
 .worldmap-img {
-  width: 1400px;
-  margin-top: 100px;
-  margin-left: calc(50vw - 715px);
+  width: 90vw;
+  margin-top: 13vw;
+  margin-bottom: 13vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .coffee-info {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   /* margin-bottom: 200px; */
 }
 
 .modal {
   position: absolute;
-  top: calc(50vh - 195px);
-  left: calc(50vw - 410px);
+  top: calc(50% - 195px);
+  left: calc(50% - 410px);
   width: 820px;
   height: 390px;
   display: none;
@@ -159,8 +168,8 @@ h2 {
   display: none;
   position: absolute;
   z-index: 240;
-  top: 265px;
-  left: 1197px;
+  top: 10%;
+  left: 93%;
 }
 
 .cancel > img {
@@ -184,7 +193,7 @@ h2 {
 }
 
 .col-6 {
-  font-family: "Handlee", cursive;
+  font-family: 'Handlee', cursive;
   width: 446px;
   margin-left: 30px;
 }
@@ -193,7 +202,7 @@ h2 {
   height: 170px;
 }
 .col-1 {
-  font-family: "Handlee", cursive;
+  font-family: 'Handlee', cursive;
   width: 86px;
   padding-left: 10px;
 }
@@ -211,7 +220,7 @@ h2 {
 
 .text {
   /* font-family: "MapoGoldenPier"; */
-  font-family: "Noto Serif", serif;
+  font-family: 'Noto Serif', serif;
   font-size: 0.9rem;
   line-height: 1.7;
   height: 110px;
@@ -252,7 +261,7 @@ h2 {
   width: 270px;
   height: 30px;
   /* font-family: "MapoGoldenPier"; */
-  font-family: "Noto Serif", serif;
+  font-family: 'Noto Serif', serif;
 }
 .roasting-point {
   width: 159px;
@@ -296,7 +305,7 @@ h2 {
 
 .section-scroll {
   height: 100vh;
-  background: url("./img/coffee_bg.jpg");
+  background: url('./img/coffee_bg.jpg');
   background-size: 100%;
   background-attachment: fixed;
   position: relative;
@@ -309,12 +318,13 @@ h2 {
   word-spacing: -0.4;
   color: #181818;
   font-weight: 700;
-  font-family: "MapoGoldenPier";
+  font-family: 'MapoGoldenPier';
 }
 
 .recommend {
   text-align: center;
-  margin-bottom: 140px;
+  margin-top: 200px;
+  margin-bottom: 300px;
 }
 
 .click-here {
@@ -344,66 +354,66 @@ h2 {
 }
 
 #mexico {
-  top: 400px;
-  left: 260px;
+  top: 42%;
+  left: 12%;
 }
 #ethiopia {
-  top: 465px;
-  left: 885px;
+  top: 50%;
+  left: 54%;
 }
 #kenya {
-  top: 505px;
-  left: 895px;
+  top: 55%;
+  left: 53%;
 }
 #tanzania {
-  top: 560px;
-  left: 875px;
+  top: 60%;
+  left: 51%;
 }
 
 #yemen {
-  top: 410px;
-  left: 943px;
+  top: 44%;
+  left: 57%;
 }
 
 #india {
-  top: 400px;
-  left: 1090px;
+  top: 42%;
+  left: 67%;
 }
 #indonesia {
-  top: 525px;
-  left: 1280px;
+  top: 54%;
+  left: 79%;
 }
 #papua {
-  top: 533px;
-  left: 1413px;
+  top: 55%;
+  left: 87%;
 }
 #cuba {
-  top: 400px;
-  left: 355px;
+  top: 43%;
+  left: 20%;
 }
 #jamaica {
-  top: 425px;
-  left: 383px;
+  top: 46%;
+  left: 22%;
 }
 #guatemala {
-  top: 415px;
-  left: 300px;
+  top: 44%;
+  left: 15%;
 }
 #panama {
-  top: 450px;
-  left: 335px;
+  top: 48%;
+  left: 18%;
 }
 #hawaii {
-  top: 325px;
-  left: 1535px;
+  top: 40%;
+  left: 92%;
 }
 #colombia {
-  top: 480px;
-  left: 380px;
+  top: 51%;
+  left: 22%;
 }
 #brazil {
-  top: 535px;
-  left: 465px;
+  top: 56%;
+  left: 27%;
 }
 
 #black {
@@ -414,6 +424,6 @@ h2 {
   z-index: 100;
   top: 0px;
   left: 0px;
-  width: 100vw;
-  height: 105vh;
+  width: 100%;
+  height: 100%;
 }

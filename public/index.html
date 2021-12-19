@@ -38,10 +38,12 @@
           Traveling around the world <br />
           with coffee beans
         </div>
-        <div id="comet">
-          <div id="subcomet"></div>
+        <div id="earth-container">
+          <div id="comet">
+            <div id="subcomet"></div>
+          </div>
+          <iframe src="./earth.html" frameborder="0" id="earth"></iframe>
         </div>
-        <iframe src="./earth.html" frameborder="0" id="earth"></iframe>
         <p class="rotate-text">Drag and rotate the world map.</p>
       </section>
     </section>
@@ -72,46 +74,29 @@
 
     <section id="sectionWorld">
       <section class="coffee-info">
-        <div id="black"></div>
-          <div class="worldmap">
+        <div class="worldmap">
+            <div id="black"></div>
             <img src="./img/worldmap.png" class="worldmap-img" />
             
+            <div class="dot" id="mexico"></div>
+            <div class="dot" id="ethiopia"></div>
+            <div class="dot" id="kenya"></div>
+            <div class="dot" id="tanzania"></div>
+            <div class="dot" id="yemen"></div>
+            <div class="dot" id="india"></div>
+            <div class="dot" id="indonesia"></div>
+            <div class="dot" id="papua"></div>
+            <div class="dot" id="cuba"></div>
+            <div class="dot" id="jamaica"></div>
+            <div class="dot" id="guatemala"></div>
+            <div class="dot" id="panama"></div>
+            <div class="dot" id="hawaii"></div>
+            <div class="dot" id="colombia"></div>
+            <div class="dot" id="brazil"></div>
           </div>
-
-          <div class="dot" id="mexico"></div>
-          <div class="dot" id="ethiopia"></div>
-          <div class="dot" id="kenya"></div>
-          <div class="dot" id="tanzania"></div>
-          <div class="dot" id="yemen"></div>
-          <div class="dot" id="india"></div>
-          <div class="dot" id="indonesia"></div>
-          <div class="dot" id="papua"></div>
-          <div class="dot" id="cuba"></div>
-          <div class="dot" id="jamaica"></div>
-          <div class="dot" id="guatemala"></div>
-          <div class="dot" id="panama"></div>
-          <div class="dot" id="hawaii"></div>
-          <div class="dot" id="colombia"></div>
-          <div class="dot" id="brazil"></div>
-
-          <div class="cancel" id="mexico-cancel"><img src="./img/cancel.png" ></div>
-          <div class="cancel" id="ethiopia-cancel"><img src="./img/cancel.png" ></div>
-          <div class="cancel" id="kenya-cancel"><img src="./img/cancel.png" ></div>
-          <div class="cancel" id="tanzania-cancel"><img src="./img/cancel.png" ></div>
-          <div class="cancel" id="yemen-cancel"><img src="./img/cancel.png" ></div>
-          <div class="cancel" id="india-cancel"><img src="./img/cancel.png" ></div>
-          <div class="cancel" id="indonesia-cancel"><img src="./img/cancel.png" ></div>
-          <div class="cancel" id="papua-cancel"><img src="./img/cancel.png" ></div>
-          <div class="cancel" id="cuba-cancel"><img src="./img/cancel.png" ></div>
-          <div class="cancel" id="jamaica-cancel"><img src="./img/cancel.png" ></div>
-          <div class="cancel" id="guatemala-cancel"><img src="./img/cancel.png" ></div>
-          <div class="cancel" id="panama-cancel"><img src="./img/cancel.png" ></div>
-          <div class="cancel" id="hawaii-cancel"><img src="./img/cancel.png" ></div>
-          <div class="cancel" id="colombia-cancel"><img src="./img/cancel.png" ></div>
-          <div class="cancel" id="brazil-cancel"><img src="./img/cancel.png" ></div>
-
           <div class="modal" id="mexico-modal">
             <div class="modal_body">
+              <div class="cancel" id="mexico-cancel"><img src="./img/cancel.png" ></div>
               <div class="line-white">
                 <div class="flex">
                   <div class="col-4 h-170">
@@ -165,6 +150,7 @@
 
           <div class="modal" id="ethiopia-modal">
             <div class="modal_body">
+              <div class="cancel" id="ethiopia-cancel"><img src="./img/cancel.png" ></div>
               <div class="line-white">
                 <div class="flex">
                   <div class="col-4 h-170">
@@ -217,6 +203,7 @@
 
           <div class="modal" id="kenya-modal">
             <div class="modal_body">
+              <div class="cancel" id="kenya-cancel"><img src="./img/cancel.png" ></div>
               <div class="line-white">
                 <div class="flex">
                   <div class="col-4 h-170">
@@ -267,6 +254,7 @@
 
           <div class="modal" id="tanzania-modal">
             <div class="modal_body">
+              <div class="cancel" id="tanzania-cancel"><img src="./img/cancel.png" ></div>
               <div class="line-white">
                 <div class="flex">
                   <div class="col-4 h-170">
@@ -318,6 +306,7 @@
 
           <div class="modal" id="yemen-modal">
             <div class="modal_body">
+              <div class="cancel" id="yemen-cancel"><img src="./img/cancel.png" ></div>
               <div class="line-white">
                 <div class="flex">
                   <div class="col-4 h-170">
@@ -368,6 +357,7 @@
 
           <div class="modal" id="india-modal">
             <div class="modal_body">
+              <div class="cancel" id="india-cancel"><img src="./img/cancel.png" ></div>
               <div class="line-white">
                 <div class="flex">
                   <div class="col-4 h-170">
@@ -423,6 +413,7 @@
 
           <div class="modal" id="indonesia-modal">
             <div class="modal_body">
+              <div class="cancel" id="indonesia-cancel"><img src="./img/cancel.png" ></div>
               <div class="line-white">
                 <div class="flex">
                   <div class="col-4 h-170">
@@ -475,6 +466,7 @@
 
           <div class="modal" id="papua-modal">
             <div class="modal_body">
+              <div class="cancel" id="papua-cancel"><img src="./img/cancel.png" ></div>
               <div class="line-white">
                 <div class="flex">
                   <div class="col-4 h-170">
@@ -526,6 +518,7 @@
 
           <div class="modal" id="cuba-modal">
             <div class="modal_body">
+              <div class="cancel" id="cuba-cancel"><img src="./img/cancel.png" ></div>
               <div class="line-white">
                 <div class="flex">
                   <div class="col-4 h-170">
@@ -580,6 +573,7 @@
 
           <div class="modal" id="jamaica-modal">
             <div class="modal_body">
+              <div class="cancel" id="jamaica-cancel"><img src="./img/cancel.png" ></div>
               <div class="line-white">
                 <div class="flex">
                   <div class="col-4 h-170">
@@ -634,6 +628,7 @@
 
           <div class="modal" id="guatemala-modal">
             <div class="modal_body">
+              <div class="cancel" id="guatemala-cancel"><img src="./img/cancel.png" ></div>
               <div class="line-white">
                 <div class="flex">
                   <div class="col-4 h-170">
@@ -684,6 +679,7 @@
 
           <div class="modal" id="panama-modal">
             <div class="modal_body">
+              <div class="cancel" id="panama-cancel"><img src="./img/cancel.png" ></div>
               <div class="line-white">
                 <div class="flex">
                   <div class="col-4 h-170">
@@ -736,6 +732,7 @@
 
           <div class="modal" id="hawaii-modal">
             <div class="modal_body">
+              <div class="cancel" id="hawaii-cancel"><img src="./img/cancel.png" ></div>
               <div class="line-white">
                 <div class="flex">
                   <div class="col-4 h-170">
@@ -789,6 +786,7 @@
 
           <div class="modal" id="colombia-modal">
             <div class="modal_body">
+              <div class="cancel" id="colombia-cancel"><img src="./img/cancel.png" ></div>
               <div class="line-white">
                 <div class="flex">
                   <div class="col-4 h-170">
@@ -841,6 +839,7 @@
 
           <div class="modal" id="brazil-modal">
             <div class="modal_body">
+              <div class="cancel" id="brazil-cancel"><img src="./img/cancel.png" ></div>
               <div class="line-white">
                 <div class="flex">
                   <div class="col-4 h-170">

@@ -1,12 +1,11 @@
 .shift-ani {
   width: 100vw;
-  height: 20vh;
+  height: 200px;
   background: url(./img/flags.png);
   background-size: 3600px auto;
   animation: shift 10s infinite linear;
   background-repeat: repeat-x;
   margin-top: 180px;
-  margin-bottom: 80px;
 }
 
 @keyframes shift {
