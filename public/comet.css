@@ -8,7 +8,7 @@ body {
 
   position: absolute;
   left: 50%;
-  top: 60%;
+  top: 63%;
   animation: jump 3s forwards infinite linear;
   transform-origin: 50%;
 }

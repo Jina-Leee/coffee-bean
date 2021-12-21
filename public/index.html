@@ -75,9 +75,10 @@
     <section id="sectionWorld">
       <section class="coffee-info">
         <div class="worldmap">
-            <div id="black"></div>
-            <img src="./img/worldmap.png" class="worldmap-img" />
-            
+          <p class="announce">Click on the dots.</p>
+          <div id="black"></div>
+          <img src="./img/worldmap.png" class="worldmap-img" />
+          
             <div class="dot" id="mexico"></div>
             <div class="dot" id="ethiopia"></div>
             <div class="dot" id="kenya"></div>
@@ -347,6 +348,7 @@
                       중간 정도의 바디감을 가진 커피.
                     </p>
                     <div class="flex">
+                      <div class="roasting">권장 로스팅 포인트</div>
                       <div class="roasting-point">FULL CITY</div>
                     </div>
                   </div>
@@ -826,8 +828,8 @@
                       초콜릿, <br />캐러멜, 과일향이 조화로운 커피
                     </p>
                     <div class="flex">
-                      <div class="text-white roasting">권장 로스팅 포인트</div>
-                      <div class="text-white roasting-point">
+                      <div class="roasting">권장 로스팅 포인트</div>
+                      <div class="roasting-point">
                         CITY & FULL CITY
                       </div>
                     </div>
@@ -898,13 +900,10 @@
 
       <div class="shift-ani" ></div>
     <div class="recommend">
-      <a href="./test/index.html" class="coffee-test">나에게 맞는 원두 추천받기</a>
-      <div class="flex click-up">
-        <img src="./img/click.png" class="click-icon"> 
-        <p class="click-here">click</p>
-      </div>
-
+      <p class="coffee-test">나에게 맞는 원두 추천받기</p>
+      <button class="test-link" id="link" onclick="location.href='./test/index.html'">CLICK</button>
     </div>
+    <footer class="footer">designed by Jina LEE &copy2021 all rights reserved.</footer>
     <script src="./main.js"></script>
   </body>
 </html>
